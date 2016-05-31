@@ -1,0 +1,49 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+#hero-section {
+    display:flex;
+    height:640px;
+    width:100%;
+}   
+
+#youtube-video {
+    position: absolute;
+    height:100%;
+    width:100%;
+    display:none;
+}
+
+#youtube-video .controls {
+    position: absolute;
+    bottom: 150px;
+    width: 990px;
+    left: 75px;
+    transform:none;
+}
+
+#media-browser {
+    display:flex;
+    height:124px;
+    margin: auto auto 0 auto;
+    z-index:2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
