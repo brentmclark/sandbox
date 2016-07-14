@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+#hero {
+    width:100%;
+    margin:0 0 40px;
+}
+
+img {
+    max-width:100%;
+}
+
+#three-up-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:40px 0;
+}
+
+.three-up__item {
+    width:30%;
+}
+
+.three-up__image {
+    max-width:100%;
+    border-radius: 50%;
+}
+
+#footer {
+    margin:40px 0 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link {
+    color:#FFF;
+    padding:20px 0;
+}
