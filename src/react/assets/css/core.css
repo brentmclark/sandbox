@@ -47,3 +47,21 @@ img {
     color:#FFF;
     padding:20px 0;
 }
+
+.editorial__container {
+    background-color: #444;
+    color: #FFF;
+    padding: 20px 10px;  
+}
+
+.editorial__heading {
+    margin-bottom:20px;
+}
+
+.editorial__container p {
+    margin:0 0 20px;
+}
+
+.editorial__container p:last-child {
+    margin:0;
+}
