@@ -1,0 +1,147 @@
+.app {  
+}
+
+aside.primary-aside {
+  width: 200px;
+}
+
+aside.primary-aside a.active {
+    font-weight: bold;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#hero {
+    width:100%;
+    margin:0 0 40px;
+}
+
+img {
+    max-width:100%;
+}
+
+#three-up-container {
+      display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;    
+    background-color: #Efefef;
+}
+
+@media (min-width:480px) {
+  #three-up-container {
+    flex-direction: row;
+  }
+
+} 
+
+.three-up__item {
+    flex:1;
+    margin:1%;
+}
+
+.three-up__image {
+    border-radius: 50%;
+}
+
+#footer {
+    margin:40px 0 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link {
+    color:#FFF;
+    padding:20px 0;
+}
+
+.editorial__container {    
+    color: #222;
+    padding: 20px 10px;  
+}
+
+.editorial__heading {
+    margin-bottom:20px;
+}
+
+.editorial__container p {
+    margin:0 0 20px;
+}
+
+.editorial__container p:last-child {
+    margin:0;
+}
+
+.header {
+    box-shadow: 0 3px 3px rgba(0,0,0,.5);    
+    position: relative;
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  background-color:#333;
+  color:#FFF;
+}
+
+.header__logo {
+  flex:1;
+}
+
+.header__nav-list {
+  flex:7;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.header__nav-item {  
+  display:flex;
+  flex-flow: column;
+  flex:1;
+}
+
+.header__nav-link {
+  color:#FFF;
+  text-decoration: none;
+  text-transform: uppercase;    
+  transition: color .6s, background-color .6s, font-size .6s; 
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;   
+}
+
+.header__nav-link:hover {
+  background:#CCC;
+  color:#333;
+  font-size:20px;
+}
