@@ -1,12 +1,14 @@
 'use client'
 import Sidebar from "@/components/sidebar";
-import { SettingsContext, defaultSettings } from "@/contexts/settings-context";
+import { ACTIONS, SettingsContext, SettingsProvider } from "@/contexts/settings-context";
+import { useContext } from "react";
 
 export default function Home() {
   return (
-    <SettingsContext.Provider value={defaultSettings}>
+    <SettingsProvider>
       <div className="App">
         <Sidebar />
+        <SidebarToggle />
         <h1>Settings Context</h1>
         <p>Did you hear that? They've shut down the main reactor. We'll be destroyed for sure. This is madness! We're doomed! There'll be no escape for the Princess this time. What's that? Artoo! Artoo-Detoo, where are you? At last! Where have you been? They're heading in this direction.
 
@@ -18,6 +20,19 @@ Shut down all the garbage mashers on the detention level. No. Shut them all down
 
 Vader was seduced by the dark side of the Force. The Force? Well, the Force is what gives a Jedi his power. It's an energy field created by all living things. It surrounds us and penetrates us.</p>
       </div>
-    </SettingsContext.Provider>
+    </SettingsProvider>
   );
+}
+
+function SidebarToggle(props) {
+  const {showSidebar, dispatch} = useContext(SettingsContext)
+
+  return (
+    <button
+      style={{float: 'right'}}
+      onClick={() => dispatch({type: ACTIONS.UPDATE, payload: {key: 'showSidebar', value: !showSidebar}})}
+    >
+      Toggle Sidebar
+    </button>
+  )
 }
